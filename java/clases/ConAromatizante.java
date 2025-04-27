@@ -1,4 +1,3 @@
-
 package clases;
 
 public class ConAromatizante extends ServicioAdicional{
@@ -9,16 +8,13 @@ public class ConAromatizante extends ServicioAdicional{
 
     @Override
     public double calcularPrecioFinal() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        double precioBase = calcularPrecioBase();
+        return precioBase + 10;
     }
 
     @Override
     public String getDescripcion() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return "Servicio de Aromatizante añadido con un cargo de $10";
     }
-
-    
-    
-    
     
 }
